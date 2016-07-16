@@ -1,6 +1,24 @@
 function Mostrar()
 {
-	var contador= 1;
+	var contador = 1;
+	while(1){
+	
+		
+		contador = contador +1;
+		if(contador ==3){
+			continue;
+
+
+		}
+		alert("while: " + contador);
+		if (contador ==6){
+			break;
+		}
+		alert("Fin" + contador);
+	}
+
+
+	/*var contador= 1;
 	while(true){
 	
 		alert("Mensaje: " + contador);
@@ -10,7 +28,8 @@ function Mostrar()
 
 
 		}
-	}
+	}*/
+
 	
 
 	/*var contador=0;
