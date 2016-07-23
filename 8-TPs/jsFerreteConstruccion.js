@@ -6,13 +6,65 @@ C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de c
 
 function Rectangulo () 
 {
+	var largoTerreno;
+	var anchoTerreno;
+	var radioTerreno;
+
+	largoTerreno = document.getElementById('Largo').value;
+	anchoTerreno = document.getElementById('Ancho').value;
+	radioTerreno = document.getElementById('Radio').value;
+
+	perimetro =2* (parseInt(largoTerreno) + parseInt(anchoTerreno));
+	cantAlambre = perimetro *3;
+	alert("La cantidasd de alambre a mostrar es: " + cantAlambre);
+	
+
+
+
+
 
 }
 function Circulo () 
 {
+	var largoTerreno;
+	var anchoTerreno;
+	var radioTerreno;
+
+	largoTerreno = document.getElementById('Largo').value;
+	anchoTerreno = document.getElementById('Ancho').value;
+	radioTerreno = document.getElementById('Radio').value;
+
+	radTerreno = (2*3.14)* radioTerreno;
+	alert("El radio es: " + radTerreno);
 	
 }
 function Materiales () 
 {
+	var largoTerreno;
+	var anchoTerreno;
+	
+	
+
+	largoTerreno = document.getElementById('Largo').value;
+	anchoTerreno = document.getElementById('Ancho').value;
+
+	/*var cantCemento = parseInt(largoTerreno) * 2;
+	alert("Cantidad de cemento: " + cantCemento);
+	var cantCal= parseInt(anchoTerreno)*3;
+	alert("Cantidad de cal: " + cantCal)
+
+	//alert("cantidad bolsas de cemento: " + cantCemento + ". cantidad de cal: " + cantCal;*/
+
+	var superficie = parseInt (largoTerreno) * parseInt(anchoTerreno);
+	//alert (superficie);
+
+	var cantCemento = superficie * 2;
+	var cantCal = superficie *3;
+
+	alert ("Cantidad cemento: "+ cantCemento);
+	alert("Cantidad cal: " +  cantCal);
+
+
+
 	
 }
