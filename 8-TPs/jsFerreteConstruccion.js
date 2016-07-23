@@ -41,22 +41,13 @@ function Circulo ()
 function Materiales () 
 {
 	var largoTerreno;
-	var anchoTerreno;
-	
-	
+	var anchoTerreno;		
 
 	largoTerreno = document.getElementById('Largo').value;
 	anchoTerreno = document.getElementById('Ancho').value;
 
-	/*var cantCemento = parseInt(largoTerreno) * 2;
-	alert("Cantidad de cemento: " + cantCemento);
-	var cantCal= parseInt(anchoTerreno)*3;
-	alert("Cantidad de cal: " + cantCal)
-
-	//alert("cantidad bolsas de cemento: " + cantCemento + ". cantidad de cal: " + cantCal;*/
-
 	var superficie = parseInt (largoTerreno) * parseInt(anchoTerreno);
-	//alert (superficie);
+	
 
 	var cantCemento = superficie * 2;
 	var cantCal = superficie *3;
