@@ -9,5 +9,56 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
+	var edad;
+	var sexo;
+	var estadoCivil;
+	var sueldoBruto;
+	var legajo;
+	var nacionalidad;
+	//var opcion;
+
+	edad = prompt("Ingrese su  edad: ");
+	parseInt(edad);
+
+	while (edad<18 || edad>90){
+
+		alert("Edad incorrecta...");
+		edad = prompt("Ingrese su  edad: ");
+		
+	}
+	document.getElementById('Edad').value = edad;
+		
+	
+	sexo = prompt("Ingrese \n “M” para masculino  \n “F” para femenino: ");
+
+	while (sexo != "M" && sexo != "F"){
+		alert("Ingrese nuevamente...");
+		sexo = prompt("Ingrese \n “M” para masculino  \n “F” para femenino: ");
+
+	}
+	if(sexo =="M"){
+		document.getElementById('Sexo').value = "Masculino";
+
+
+	}else if (sexo == "F"){
+		document.getElementById('Sexo').value = "Femenino";
+	}
+	
+		
+	estadoCivil = prompt ("Ingrese:\n1-para soltero.\n2-para casados.\n3-para divorciados.\n4-para viudos.");
+	parseInt(estadoCivil);
+
+	switch(estadoCivil){
+		case 1: 
+			document.getElementById('EstadoCivil').value = "Soltero";
+			break;
+
+
+	}
+		/*sueldoBruto = prompt("Ingrese su  sueldo: ");
+		legajo = prompt("Ingrese su numero de legajo: ");
+		nacionalidad = prompt("Ingrese:\n“A”. Argentina.\n“E”. Extranjero.\n“N”. Nacionalizado. ");*/
+
+	
  
 }
