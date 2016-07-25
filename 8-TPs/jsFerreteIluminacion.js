@@ -10,5 +10,93 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
+	
+	
+	var descuento;
+	var precioPorLampara = 35;
+	var precioLamparas ;
+	var precioConDesc = document.getElementById('precioDescuento').value;
+	var cantLamparas = document.getElementById('Cantidad').value;
+	var marcaLamparas = document.getElementById('Marca').value;
+
+	precioTotalPorCantidad = precioPorLampara * cantLamparas;
+	
+
+	if (cantLamparas >= 6){
+		descuento = (50*precioTotalPorCantidad)/100;
+		
+		precioConDesc = precioTotalPorCantidad - descuento;
+		document.getElementById('precioDescuento').value = precioConDesc;
+		
+
+	}
+	else{
+
+		if( cantLamparas ==5){
+			switch(marcaLamparas){
+				case "ArgentinaLuz":
+					descuento = (40 * precioTotalPorCantidad)/100;
+					precioConDesc = precioTotalPorCantidad - descuento;
+					document.getElementById('precioDescuento').value = precioConDesc;
+					break; 
+
+				default:
+					descuento = (30 * precioTotalPorCantidad)/100;
+					precioConDesc = precioTotalPorCantidad - descuento;
+					document.getElementById('precioDescuento').value = precioConDesc;
+
+
+
+			}
+
+		}
+	}
+	//else{
+
+		if( cantLamparas ==4){
+			switch(marcaLamparas){
+				case "FelipeLamparas":
+				case "ArgentinaLuz":
+					descuento = (25 * precioTotalPorCantidad)/100;
+					precioConDesc = precioTotalPorCantidad - descuento;
+					document.getElementById('precioDescuento').value = precioConDesc;
+					break; 
+
+				default:
+					descuento = (20 * precioTotalPorCantidad)/100;
+					precioConDesc = precioTotalPorCantidad - descuento;
+					document.getElementById('precioDescuento').value = precioConDesc;
+
+
+
+			}
+
+		}
+	//}
+		if( cantLamparas ==3){
+				switch(marcaLamparas){
+					
+					case "ArgentinaLuz":
+						descuento = (15 * precioTotalPorCantidad)/100;
+						precioConDesc = precioTotalPorCantidad - descuento;
+						document.getElementById('precioDescuento').value = precioConDesc;
+						break; 
+					case "FelipeLamparas":
+						descuento = (10 * precioTotalPorCantidad)/100;
+						precioConDesc = precioTotalPorCantidad - descuento;
+						document.getElementById('precioDescuento').value = precioConDesc;
+						break;
+
+					default:
+						descuento = (5 * precioTotalPorCantidad)/100;
+						precioConDesc = precioTotalPorCantidad - descuento;
+						document.getElementById('precioDescuento').value = precioConDesc;
+
+
+
+				}
+
+			}
+
  	
 }
