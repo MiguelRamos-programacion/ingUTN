@@ -16,18 +16,23 @@ function ComenzarIngreso ()
 	var legajo;
 	var nacionalidad;
 
-	edad = prompt("Ingrese su  edad: ");
-	parseInt(edad);
 
-		while (edad<18 || edad>90){
-
-			alert("Edad incorrecta...");
+	/*edad = prompt("Ingrese su  edad: ");
+	edad= parseInt(edad);
+		while(isNaN(edad)){
+			alert("Error, debe ingresar un  numero...");
 			edad = prompt("Ingrese su  edad: ");
+
+			while (edad<18 || edad>90){
+				alert("error, debe ingresar edad apropiada...");
+				edad = prompt("Ingrese su  edad: ");
+			
+			}
 			
 		}
 		document.getElementById('Edad').value = edad;
 		alert("Usted ha ingresado: " + edad);
-			
+		*/	
 		
 		sexo = prompt("Ingrese \n “M” para masculino  \n “F” para femenino: ");
 
@@ -50,7 +55,7 @@ function ComenzarIngreso ()
 		
 	estadoCivil = prompt ("Ingrese:\n1-para soltero.\n2-para casados.\n3-para divorciados.\n4-para viudos.");
 	
-	var aux = true;
+	/*var aux = true;
 		while(aux){
 
 			switch(estadoCivil){
@@ -100,6 +105,7 @@ function ComenzarIngreso ()
 			legajo = prompt("Ingrese su numero de legajo: ");
 		}
 		document.getElementById('Legajo').value= legajo;
+		//Parsear legajo.
 
 		
 	nacionalidad = prompt("Ingrese:\n“A”. Argentina.\n“E”. Extranjero.\n“N”. Nacionalizado. ");
@@ -131,7 +137,7 @@ function ComenzarIngreso ()
 			}
 
 
-		}
+		}*/
 
 	
  
